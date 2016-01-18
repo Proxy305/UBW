@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+
+@keyframes background{
+	from{background:#FFFFFF;}
+	to{background:#333333;}
+}
+
+body{
+	animation: background 1s;
+	animation-fill-mode: forwards;
+	color:#FFFFFF;
+	padding-top:50px;
+}
+
+#header{
+	font-size:4em;
+	font-family:"Conv_HelveticaNeueLTPro-Bd";
+}
+
+#header-CN{
+	font-family:"微软雅黑", "Hiragino Sans GB W3", "Microsoft YaHei UI Light";
+	text-align:right;
+}
+
+.splitter{
+	width:100%;
+	height:0px;
+	border-top:3px solid #FFFFFF;
+}
+
+#header p{
+	margin:0px;
+	padding:0px;
+}
+
+h2{
+	border-bottom:1px #666 solid;
+	padding:10px 0px 10px 0px;
+	color:#CCCCCC;
+	font-family:"微软雅黑", "Hiragino Sans GB W3", "Microsoft YaHei UI Light";
+}
+
+.paragraph p{
+	font-family:"微软雅黑", "Hiragino Sans GB W3", "Microsoft YaHei UI Light";
+	text-indent:2em;
+}
+
+ol{
+	font-family:"微软雅黑", "Hiragino Sans GB W3", "Microsoft YaHei UI Light";
+}
+
+
