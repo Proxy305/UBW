@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "UBW",
+    "version": "1.0",
+    "description": "Rip PDF from JNU Digital Library",
+    "icons": {
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    },
+    "browser_action": {
+        "default_icon": {
+            "19": "images/icon19.png",
+            "38": "images/icon38.png"
+        },
+        "default_title": "PDF Ripper",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [ "http://202.116.13.24/*" ],
+            "js": ["libs/scanner.js","libs/jquery-1.11.1.min.js"],
+			"css": ["css/scanner.css"],
+			"all_frames": true,
+	      	"run_at": "document_end"
+        }
+    ]
+}

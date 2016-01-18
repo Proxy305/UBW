@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	width:250px;
+}
+#print{
+	display:none;
+}
+#ratioInput{
+	width:100px;
+}
