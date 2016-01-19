@@ -36,7 +36,7 @@ chrome.runtime.onConnect.addListener(function(port) {
 			bodyNew.innerHTML = bodyInnerHTML;
 			document.getElementsByTagName("html")[0].appendChild(bodyNew);
 			document.getElementsByTagName("html")[0].style.overflow = "scroll";
-			port.postMessage("Done!");
+			port.postMessage('Page analysis success! Now press "Print" button to generate PDF file.');
 			//window.print();				  
 		}
 	});

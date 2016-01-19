@@ -2,6 +2,9 @@
 /* CSS Document */
 body{
 	width:250px;
+	margin:0px;
+	padding:0px;
+	background:#F5F5F5;
 }
 #print{
 	display:none;
@@ -9,3 +12,43 @@ body{
 #ratioInput{
 	width:100px;
 }
+
+#contents{
+	padding:10px;
+}
+
+#generate,#print{
+	height:40px;
+	width:100%;
+	border:none;
+	background-color:#5677fc;
+	font-size:1.5em;
+	color:#FFFFFF;
+}
+
+.buttonGroup{
+	height:35px;
+	padding:5px 10px 5px 10px;
+	border-radius:5px;
+	background-color:#FFF;
+	margin:5px 0px 10px 0px;
+	
+}
+
+.buttonGroup span{
+	line-height:35px;
+	font-size:1.3em;
+	color:#aaa;
+}
+
+.buttonGroup input{
+	border:none;
+	background:none;
+}
+
+.pullRight{
+	float:right;
+}
+
+
+

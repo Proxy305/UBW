@@ -5,7 +5,7 @@ var ratio = 90;
 
 
 $("#generate").click(function(e) {
-	$("#generate").hide();
+	$("#generate,#tips,.buttonGroup").hide();
 	$("#print").show();
 	if(document.getElementById("useRatio").checked === true){
 		console.log($("#ratioInput").val());
@@ -22,13 +22,13 @@ $("#generate").click(function(e) {
 	
 });
 
-$("#print").click(function(e) {
+$("#print").click(function(e) {	
 	chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
 		chrome.tabs.sendMessage(tabs[0].id, "Print", function(response) {
 			$("#console").text(response);
 			console.log(response);
 		});  
-	});
+	});	
 });
 
 

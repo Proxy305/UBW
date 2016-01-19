@@ -7,15 +7,22 @@
 </head>
 
 <body>
-<h3>Don't STEAL.</h3>
-<button id="generate">Generate</button>
-<button id="print">Print</button>
-<p id="console"></p>
-	<p>To enable scaling, select "Scaling" below before you click "Generate".</p>
-	<label>Scaling:</label>
-	<input type="checkbox" id="useRatio"/>
-	<label>Scale Ratio:</label>
-	<input type="number" min="0" max="100" placeholder="Default:90(%)" id="ratioInput" disabled="disabled"/>
+<img src="images/banner.png" style="width:100%;"/>
+<div id="contents">
+	<button id="generate">Generate</button>
+	<button id="print">Print</button>
+	<p id="console"></p>
+	
+	<div class="buttonGroup">
+		<span class="ui-switch">Scaling:</span>
+		<span class="pullRight"><input type="checkbox" id="useRatio"/></span>		
+	</div>
+	<div class="buttonGroup">
+		<span>Scale Ratio:</span>
+		<span  class="pullRight"><input type="number" min="0" max="100" placeholder="Default:90(%)" id="ratioInput" disabled="disabled"/></span>
+	</div>
+	<p id="tips">To enable scaling, select "Scaling" below before you click "Analyze".</p>
+</div>
 <script type="text/javascript" src="libs/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="libs/jspdf.js"></script>
 <script type="text/javascript" src="libs/mainService.js"></script>
